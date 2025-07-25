@@ -1,0 +1,280 @@
+/* navber-section */
+.navber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cart a img {
+    height: 15px;
+    width: 20px;
+}
+
+.cart a {
+    font-weight: bold;
+}
+
+/* responsive */
+@media screen and (max-width:578px) {
+    .nav-menu li:not(.cart) {
+        display: none;
+    }
+
+    .logo span {
+        font-size: 1.4rem;
+    }
+
+    .cart a {
+        font-size: 0.9rem;
+    }
+}
+
+/* banner saction */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.banner-text {
+    flex: 1;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+
+}
+
+.banner-text h1 {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.bold {
+    color: black;
+}
+
+/* responsive */
+@media screen and (max-width:578px) {
+    .banner {
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
+    .banner-img {
+        margin-top: 20px;
+    }
+
+}
+
+/* plant-saction */
+.plants {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.ours {
+    color: orangered;
+}
+
+.plants-tittle h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.plants-tittle p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+
+}
+
+.plant-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    text-align: center;
+
+
+}
+
+.plant-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.plant-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 10px;
+
+}
+
+.plant-card button {
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+
+.plant-card button:hover {
+    background: #d35400;
+}
+
+@media screen and (max-width:578px) {
+    .plants-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.plants-lover {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    flex: 1 1 400px;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content-box {
+    flex: 1 1 400px;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+.content-box h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.content-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.content-box li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+@media screen and (max-width:578px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content-box {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .content-box ul {
+        text-align: left;
+        padding-left: 40px;
+    }
+}
+
+/* join section */
+.join-section {
+    background-image: url(/B12A02-Responsive-Flowers/assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.join-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    /* max-width: 900px; */
+    margin: auto;
+}
+
+.input-group input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 600px;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
