@@ -259,7 +259,6 @@
 .input-group {
     display: flex;
     justify-content: center;
-    /* max-width: 900px; */
     margin: auto;
 }
 
@@ -277,4 +276,18 @@
     color: white;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
+}
+
+
+@media screen and (max-width:578px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input,
+    .input-group button {
+        border-radius: 4px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
 }
